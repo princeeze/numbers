@@ -24,6 +24,7 @@ export const numberService = async (req: Request, res: Response) => {
   };
 
   const isPerfect = (n: number): boolean => {
+    if (n === 1) return false;
     const sum = Array.from({ length: n - 1 }, (_, i) => i + 1)
       .filter((i) => n % i === 0)
       .reduce((acc, curr) => acc + curr, 0);
@@ -31,7 +32,7 @@ export const numberService = async (req: Request, res: Response) => {
   };
 
   const digitSum = (n: number): number => {
-    return String(n)
+    return String(Math.abs(n))
       .split("")
       .reduce((acc, digit) => acc + Number(digit), 0);
   };

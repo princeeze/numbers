@@ -10,7 +10,9 @@ This API classifies a number and provides interesting mathematical properties al
 
 ## API Endpoint
 
-### GET /api/classify-number?number={number}
+### BASE URL = https://numbers-production.up.railway.app
+
+#### GET /api/classify-number?number={number}
 
 #### Query Parameters
 

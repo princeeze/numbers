@@ -1,7 +1,7 @@
 import express, { Express, Request, Response } from "express";
 import cors from "cors";
 import morgan from "morgan";
-import { numberService } from "@/services/numberService";
+import { numberService } from "./services/numberService";
 
 const app: Express = express();
 app.use(morgan("dev"));
